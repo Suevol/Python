@@ -1,14 +1,15 @@
 # -*- coding: utf-8 -*-
 #Bot name: EvgenySubbotenkoBot
 #бот реагирует на упоменание о погоде и предлагает сообщить температуру в указанном городе
+#The bot reacts to the weather announcement and proposes to report the temperature in the specified city
 import telebot
 from telebot import types
-import time
+import times
 import pyowm
 import re
 
-owm = pyowm.OWM('ваш валидный API ключ')
-token = 'ваш валидный токен'
+owm = pyowm.OWM('API key')
+token = 'token'
 bot = telebot.TeleBot(token)
 
 @bot.message_handler(regexp=r'\w\sпогод\w')
