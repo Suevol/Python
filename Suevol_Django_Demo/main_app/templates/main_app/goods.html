@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+{% extends "main_app/base.html" %}
+{% load staticfiles %}
+{% block content %}
+<div class="div_img">
+    <img src="{% static 'main_app/img/tesla0.jpg' %}">
+</div>
+<div id="teaser1">
+    <br>
+    <b>TESLA MODEL S</b><br><br>
+    Электрокар нового поколения<br>
+    Безупречные экологические показатели<br>
+    Настоящее воплощение будущего!<br><br>
+    <input type="button" value="ПОДРОБНЕЕ">
+</div>
+<div class="div_img shop_div_img">
+    <img src="{% static 'main_app/img/nikola0.jpg' %}">
+</div>
+<div id="teaser2">
+    <br>
+    <b>NIKOLA MODEL ONE</b><br><br>
+    Уникальный тягач на электротяге<br>
+    Невероятные показатели эффективности<br>
+    Новые возможности для бизнеса<br><br>
+    <input type="button" value="ПОДРОБНЕЕ">
+</div>
+<div class="div_img shop_div_img">
+    <img src="{% static 'main_app/img/home0.jpg' %}">
+</div>
+<div id="teaser3">
+    <br>
+    <b>TESLA HOME</b><br><br>
+    Домашняя система управления электропитанием<br>
+    Новейшие технологии в Вашем доме<br>
+    Превосходная экономия электроэнергии<br><br>
+    <input type="button" value="ПОДРОБНЕЕ">
+</div>
+{% endblock %}

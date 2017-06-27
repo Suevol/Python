@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+
+<html>
+<head>
+    <title>
+	{% block title %}
+        {{title}}
+	{% endblock %}
+    </title>
+	{% block css %}
+	<link rel="stylesheet" type="text/css" href="{% static 'main_app/css/style.css' %}"/>
+	{% endblock %}
+    {% block icon %}
+    <link rel="icon" type="image/x-icon" href="{% static 'main_app/img/icon.ico' %}"/> 
+    {% endblock %}
+    <meta charset="utf-8">
+</head>
+<body>
+<div class="container">
+    <div id="header">
+        <div class="div_nav"><a href="{% url 'main' %}">Главная</a></div>
+        <div class="div_nav"><a href="{% url 'goods' %}">Продукты</a></div>
+        <div class="div_nav"><a href="{% url 'contacts' %}">Контакты</a></div>
+    </div>
+    <div class="content">
+        {% block content %}
+	    {% endblock %}
+    </div>
+    <div class="footer">
+        &copy; Субботенко Евгений
+    </div>
+</div>
+</body>
+</html>

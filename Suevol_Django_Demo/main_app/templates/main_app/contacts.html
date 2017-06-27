@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+
+{% extends "main_app/base.html" %}
+{% load staticfiles %}
+{% block content %}
+<table id="table" border="1" cellspasing="0" align="center" width="750" bgcolor="white">
+    <tr height="70px">
+        <td colspan="2" align="center">
+            <h1>О нас</h1>
+        </td>
+    </tr>
+    <tr height="150px">
+        <td colspan="2">
+           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d50695.76070059597!2d-122.17036944870648!3d37.42564483493015!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fb07b9dba1c39%3A0xe1ff55235f576cf!2z0J_QsNC70L4t0JDQu9GM0YLQviwg0JrQsNC70LjRhNC-0YDQvdC40Y8sINCh0KjQkA!5e0!3m2!1sru!2sru!4v1498493794788" width="800" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </td>
+    </tr> 
+    <tr height="400px">
+        <td width="800">
+            <fieldset>
+                <legend align="center">Напишите нам</legend>
+                <label for="name">Ваше имя:</label>
+                <input type="text" id="name" placeholder="введите Ваше имя"><br>
+                <label for="e-mail">Ваш e-mail:</label>
+                <input type="text" id="e-mail" placeholder="введите Ваш e-mail"><br>
+                <label for="text">Напишите нам:</label><br>
+                <textarea id="text" cols="100" rows="10" placeholder="введите здесь Ваш текст"></textarea><br>
+                <input type="button" value="Отправить письмо">
+            </fieldset>
+        </td>
+    </tr>
+</table>
+{% endblock %}

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+
+{% extends "main_app/base.html" %}
+{% load staticfiles %}
+{% block content %}
+<div class="div_img">
+    <img src="{% static 'main_app/img/photo1.jpg' %}">
+    <img src="{% static 'main_app/img/photo2.jpg' %}">
+    <img src="{% static 'main_app/img/photo3.jpg' %}">
+</div>
+<div id="txt">
+    <p>
+        <b>Tesla Inc. (ранее Tesla Motors)</b> — американская компания из Кремниевой долины, ориентированная на производство электромобилей и решений для хранения электрической энергии. Названа в честь всемирно известного электротехника и физика Николы Теслы. Компания базируется в Пало-Альто, штат Калифорния<br>
+        <b>Nikola Motors</b> — американская компания создавшая гибридный грузовик Nikola One, работающий от электрической тяги и получающий энергию от водородных топлевных элементов. Компания базируется в Солт-Лейк-Сити, штат Юта.
+    </p>
+</div>
+{% endblock %}
