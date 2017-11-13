@@ -3,6 +3,7 @@ import psutil
 import shutil
 import sys
 
+# дублирование указаного файла
 def duplicate_file(filename):
     if os.path.isfile(filename):
         newfile = filename + '.dupl'
@@ -12,8 +13,7 @@ def duplicate_file(filename):
         else:
             print('При копировании возникла ошибка')
 
-
-#удаление дубликатов в указанной директории через for
+# удаление дубликатов в указанной директории через for
 def del_duplicate(dirname):
     file_list = os.listdir(dirname)
     doubl_count = 0
@@ -26,7 +26,7 @@ def del_duplicate(dirname):
                 doubl_count += 1
 
 
-#удаление дубликатов в указанной директории через while
+# удаление дубликатов в указанной директории через while
 def while_del_duplicate(dirname):
     file_list = os.listdir(dirname)
     i = 0
