@@ -1,8 +1,5 @@
 # -*- coding: utf-8 -*-
 
-#данный скрипт будет полезен аналитикам работающим с почтовыми отправлениями и поможет получить для последующей обработки
-#информацию о населенном пункте и соответсвующем ему индексе.
-
 #This script will be useful for analysts working with postal items and will help to receive for further processing
 #Information about the locality and the corresponding index.
 
