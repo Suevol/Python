@@ -51,6 +51,7 @@ def post_index():
         a += 1
     file.close()
 
+# Вызываю функции в виде трех параллельных потоков
 t1 = threading.Thread(target=post_region, args=())
 t2 = threading.Thread(target=post_index, args=())
 t3 = threading.Thread(target=post_city, args=()) 
